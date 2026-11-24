@@ -1,0 +1,291 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #FFF4DC;
+    color: #3B200D;
+}
+
+/* Header */
+.header {
+    background: #542800;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 38px;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+.logo h2 span {
+    color: #FFB800;
+}
+
+.logo p {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #FCE8C1;
+}
+
+.live-badge {
+    background: #75400F;
+    border: 1px solid #FFB800;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.live-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #38D66B;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #FFE4A8, #FFF5DD, #FFDB75);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #542800;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #E99B00;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 28px;
+    color: #70421D;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 16px 20px;
+    border: 2px solid #F2D28C;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+}
+
+.search-box input:focus {
+    border-color: #D99A00;
+}
+
+.search-box button {
+    background: #FFB800;
+    color: #3B200D;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #E99B00;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+    padding: 35px 5%;
+}
+
+.results-heading {
+    margin-bottom: 22px;
+}
+
+.results-heading h2 {
+    color: #713707;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.results-heading p {
+    color: #896342;
+    font-size: 14px;
+}
+
+/* Product Grid */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.card {
+    background: #FFFCF5;
+    border: 1px solid #F0DDB8;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(91, 49, 8, 0.10);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(91, 49, 8, 0.17);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 17px;
+    color: #3B200D;
+    min-height: 42px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card a {
+    display: block;
+    background: #8B3E08;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 14px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #542800;
+}
+
+/* Footer */
+.footer {
+    background: #542800;
+    color: white;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        padding: 16px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .logo p {
+        font-size: 11px;
+    }
+
+    .logo-icon {
+        font-size: 28px;
+    }
+
+    .live-badge {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 40px 18px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 25px 16px;
+    }
+
+    #results {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

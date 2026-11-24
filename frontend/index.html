@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Scraper | Discover Amazing Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">📚</span>
+            <div>
+                <h2>Product <span>Scraper</span></h2>
+                <p>Search & Discover Amazing Books</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Next <span>Favorite</span> Book</h1>
+            <p>
+                Search and discover amazing books with details,
+                prices and ratings!
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search books..."
+                >
+                <button onclick="search()">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Results -->
+    <main class="main-content">
+        <div class="results-heading">
+            <h2>📚 Explore Books</h2>
+            <p>Discover books that match your search</p>
+        </div>
+
+        <div id="results" class="product-grid"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>❤️ Built with Python, Flask & BeautifulSoup</p>
+        <p>E-Commerce Product Scraper</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
